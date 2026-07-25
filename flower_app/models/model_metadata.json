@@ -1,0 +1,35 @@
+{
+  "class_names": [
+    "daisy",
+    "dandelion",
+    "rose",
+    "sunflower",
+    "tulip"
+  ],
+  "img_size": [
+    224,
+    224
+  ],
+  "num_classes": 5,
+  "preprocessing": {
+    "custom_cnn": "rescale_0_to_1",
+    "resnet50": "caffe_mode_preprocess",
+    "efficientnet": "tf_mode_preprocess"
+  },
+  "ensemble_weights": {
+    "custom_cnn": 0.26019417619242247,
+    "resnet50": 0.36990291190378877,
+    "efficientnet": 0.36990291190378877
+  },
+  "test_accuracies": {
+    "custom_cnn": 0.6504854559898376,
+    "resnet50": 0.9247573018074036,
+    "efficientnet": 0.9247573018074036,
+    "ensemble": 0.9271844660194175
+  },
+  "training_times_minutes": {
+    "custom_cnn": 56.566149326165515,
+    "resnet50": 16.06801762183507,
+    "efficientnet": 19.529877213637032
+  }
+}
